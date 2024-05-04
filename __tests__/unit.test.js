@@ -16,8 +16,8 @@ test('rightEmail', () => {
   expect(isEmail('abc123@ucsd.edu')).toBe(true);
 });
 test('wrongStrongPassword', () => {
-  expect(isStrongPassword('a')).toBe(true);
+  expect(isStrongPassword('a')).toBe(false);
 });
 test('wrongDate', () => {
-  expect(isDate('abc123@ucsd.edu')).toBe(true);
+  expect(isDate('abc123@ucsd.edu')).toBe(false);
 });
